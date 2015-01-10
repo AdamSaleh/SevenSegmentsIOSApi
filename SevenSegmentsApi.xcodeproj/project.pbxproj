@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A21211651A61CE7F000984A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21211641A61CE7F000984A6 /* Foundation.framework */; };
+		A212116A1A61CE7F000984A6 /* SevenSegmentsApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A21211691A61CE7F000984A6 /* SevenSegmentsApi.h */; };
+		A212116C1A61CE7F000984A6 /* SevenSegmentsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = A212116B1A61CE7F000984A6 /* SevenSegmentsApi.m */; };
+		A21211731A61CE7F000984A6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21211721A61CE7F000984A6 /* XCTest.framework */; };
+		A21211741A61CE7F000984A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21211641A61CE7F000984A6 /* Foundation.framework */; };
+		A21211761A61CE7F000984A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21211751A61CE7F000984A6 /* UIKit.framework */; };
+		A21211791A61CE7F000984A6 /* libSevenSegmentsApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21211611A61CE7F000984A6 /* libSevenSegmentsApi.a */; };
+		A212117F1A61CE7F000984A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A212117D1A61CE7F000984A6 /* InfoPlist.strings */; };
+		A21211811A61CE7F000984A6 /* SevenSegmentsApiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21211801A61CE7F000984A6 /* SevenSegmentsApiTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A21211771A61CE7F000984A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A21211591A61CE7F000984A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A21211601A61CE7F000984A6;
+			remoteInfo = SevenSegmentsApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A212115F1A61CE7F000984A6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A212116A1A61CE7F000984A6 /* SevenSegmentsApi.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A21211611A61CE7F000984A6 /* libSevenSegmentsApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSevenSegmentsApi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21211641A61CE7F000984A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A21211681A61CE7F000984A6 /* SevenSegmentsApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SevenSegmentsApi-Prefix.pch"; sourceTree = "<group>"; };
+		A21211691A61CE7F000984A6 /* SevenSegmentsApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SevenSegmentsApi.h; sourceTree = "<group>"; };
+		A212116B1A61CE7F000984A6 /* SevenSegmentsApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SevenSegmentsApi.m; sourceTree = "<group>"; };
+		A21211711A61CE7F000984A6 /* SevenSegmentsApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SevenSegmentsApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21211721A61CE7F000984A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A21211751A61CE7F000984A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A212117C1A61CE7F000984A6 /* SevenSegmentsApiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SevenSegmentsApiTests-Info.plist"; sourceTree = "<group>"; };
+		A212117E1A61CE7F000984A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A21211801A61CE7F000984A6 /* SevenSegmentsApiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SevenSegmentsApiTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A212115E1A61CE7F000984A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21211651A61CE7F000984A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A212116E1A61CE7F000984A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21211791A61CE7F000984A6 /* libSevenSegmentsApi.a in Frameworks */,
+				A21211731A61CE7F000984A6 /* XCTest.framework in Frameworks */,
+				A21211761A61CE7F000984A6 /* UIKit.framework in Frameworks */,
+				A21211741A61CE7F000984A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A21211581A61CE7F000984A6 = {
+			isa = PBXGroup;
+			children = (
+				A21211661A61CE7F000984A6 /* SevenSegmentsApi */,
+				A212117A1A61CE7F000984A6 /* SevenSegmentsApiTests */,
+				A21211631A61CE7F000984A6 /* Frameworks */,
+				A21211621A61CE7F000984A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A21211621A61CE7F000984A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A21211611A61CE7F000984A6 /* libSevenSegmentsApi.a */,
+				A21211711A61CE7F000984A6 /* SevenSegmentsApiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A21211631A61CE7F000984A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A21211641A61CE7F000984A6 /* Foundation.framework */,
+				A21211721A61CE7F000984A6 /* XCTest.framework */,
+				A21211751A61CE7F000984A6 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A21211661A61CE7F000984A6 /* SevenSegmentsApi */ = {
+			isa = PBXGroup;
+			children = (
+				A21211691A61CE7F000984A6 /* SevenSegmentsApi.h */,
+				A212116B1A61CE7F000984A6 /* SevenSegmentsApi.m */,
+				A21211671A61CE7F000984A6 /* Supporting Files */,
+			);
+			path = SevenSegmentsApi;
+			sourceTree = "<group>";
+		};
+		A21211671A61CE7F000984A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A21211681A61CE7F000984A6 /* SevenSegmentsApi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A212117A1A61CE7F000984A6 /* SevenSegmentsApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A21211801A61CE7F000984A6 /* SevenSegmentsApiTests.m */,
+				A212117B1A61CE7F000984A6 /* Supporting Files */,
+			);
+			path = SevenSegmentsApiTests;
+			sourceTree = "<group>";
+		};
+		A212117B1A61CE7F000984A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A212117C1A61CE7F000984A6 /* SevenSegmentsApiTests-Info.plist */,
+				A212117D1A61CE7F000984A6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A21211601A61CE7F000984A6 /* SevenSegmentsApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A21211841A61CE7F000984A6 /* Build configuration list for PBXNativeTarget "SevenSegmentsApi" */;
+			buildPhases = (
+				A212115D1A61CE7F000984A6 /* Sources */,
+				A212115E1A61CE7F000984A6 /* Frameworks */,
+				A212115F1A61CE7F000984A6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SevenSegmentsApi;
+			productName = SevenSegmentsApi;
+			productReference = A21211611A61CE7F000984A6 /* libSevenSegmentsApi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A21211701A61CE7F000984A6 /* SevenSegmentsApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A21211871A61CE7F000984A6 /* Build configuration list for PBXNativeTarget "SevenSegmentsApiTests" */;
+			buildPhases = (
+				A212116D1A61CE7F000984A6 /* Sources */,
+				A212116E1A61CE7F000984A6 /* Frameworks */,
+				A212116F1A61CE7F000984A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A21211781A61CE7F000984A6 /* PBXTargetDependency */,
+			);
+			name = SevenSegmentsApiTests;
+			productName = SevenSegmentsApiTests;
+			productReference = A21211711A61CE7F000984A6 /* SevenSegmentsApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A21211591A61CE7F000984A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Adam Saleh";
+			};
+			buildConfigurationList = A212115C1A61CE7F000984A6 /* Build configuration list for PBXProject "SevenSegmentsApi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A21211581A61CE7F000984A6;
+			productRefGroup = A21211621A61CE7F000984A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A21211601A61CE7F000984A6 /* SevenSegmentsApi */,
+				A21211701A61CE7F000984A6 /* SevenSegmentsApiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A212116F1A61CE7F000984A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A212117F1A61CE7F000984A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A212115D1A61CE7F000984A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A212116C1A61CE7F000984A6 /* SevenSegmentsApi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A212116D1A61CE7F000984A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21211811A61CE7F000984A6 /* SevenSegmentsApiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A21211781A61CE7F000984A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A21211601A61CE7F000984A6 /* SevenSegmentsApi */;
+			targetProxy = A21211771A61CE7F000984A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A212117D1A61CE7F000984A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A212117E1A61CE7F000984A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A21211821A61CE7F000984A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A21211831A61CE7F000984A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A21211851A61CE7F000984A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SevenSegmentsApi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenSegmentsApi/SevenSegmentsApi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A21211861A61CE7F000984A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SevenSegmentsApi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenSegmentsApi/SevenSegmentsApi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A21211881A61CE7F000984A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenSegmentsApi/SevenSegmentsApi-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SevenSegmentsApiTests/SevenSegmentsApiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A21211891A61CE7F000984A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenSegmentsApi/SevenSegmentsApi-Prefix.pch";
+				INFOPLIST_FILE = "SevenSegmentsApiTests/SevenSegmentsApiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A212115C1A61CE7F000984A6 /* Build configuration list for PBXProject "SevenSegmentsApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21211821A61CE7F000984A6 /* Debug */,
+				A21211831A61CE7F000984A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A21211841A61CE7F000984A6 /* Build configuration list for PBXNativeTarget "SevenSegmentsApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21211851A61CE7F000984A6 /* Debug */,
+				A21211861A61CE7F000984A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A21211871A61CE7F000984A6 /* Build configuration list for PBXNativeTarget "SevenSegmentsApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21211881A61CE7F000984A6 /* Debug */,
+				A21211891A61CE7F000984A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A21211591A61CE7F000984A6 /* Project object */;
+}
