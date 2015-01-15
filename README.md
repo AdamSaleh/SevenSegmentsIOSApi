@@ -24,6 +24,13 @@ Setting ```customerString: "123-asdf"``` is equivalent to ```customerDict: @{@"r
                              initWithToken: company_token
                              customerDict: @{@"registered": @"customer010"}
                              apiUrl: @"https://api.7segments.com"
+```
+Because we utilize the default NSURLConnection, you should supply the connection handler:
+```
+ SevenSegmentsApi *api = [[SevenSegmentsApi alloc]
+                             initWithToken: company_token
+                             customerDict: @{@"registered": @"customer010"}
+                             apiUrl: @"https://api.7segments.com"
                              completionHandler:^(NSURLResponse *response, NSData *postData, NSError *error){
                                  if (error) {
                                      NSLog(@"7Segments error:%@", error.localizedDescription);
