@@ -29,10 +29,14 @@
 
 @interface SevenSegmentsApi : NSObject<SevenSegmentsApi>
 - (id)initWithToken:(NSString *)token customerString:(NSString *)customer completionHandler:(void (^)(NSURLResponse *response,NSData *data, NSError *connectionError)) completionHandler;
-
 - (id)initWithToken:(NSString *) token customerDict:(NSDictionary *)customer completionHandler:(void (^)(NSURLResponse *response,NSData *data, NSError *connectionError)) completionHandler;
 - (id)initWithToken:(NSString *)token customerString:(NSString *)customer apiUrl: (NSString *) uriString completionHandler:(void (^)(NSURLResponse *response,NSData *data, NSError *connectionError)) completionHandler;
 - (id)initWithToken:(NSString *)token customerDict:(NSDictionary *)customer apiUrl: (NSString *) uriString completionHandler:(void (^)(NSURLResponse *response,NSData *data, NSError *connectionError)) completionHandler;
+
+- (id)initWithToken:(NSString *)token customerString:(NSString *)customer;
+- (id)initWithToken:(NSString *) token customerDict:(NSDictionary *)customer;
+- (id)initWithToken:(NSString *)token customerString:(NSString *)customer apiUrl: (NSString *) uriString;
+- (id)initWithToken:(NSString *)token customerDict:(NSDictionary *)customer apiUrl: (NSString *) uriString;
 
 
 @property(strong, nonatomic, readwrite) NSString* token; // holding token

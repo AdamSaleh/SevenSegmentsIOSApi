@@ -13,6 +13,21 @@
 
 @implementation SevenSegmentsApi
 
+- (id)initWithToken:(NSString *)token customerString:(NSString *)customer
+{
+    return [self initWithToken:token customerDict:@{@"registered":customer} apiUrl:target completionHandler:nil];
+}
+
+- (id)initWithToken:(NSString *) token customerDict:(NSDictionary *)customer
+{
+    return [self initWithToken:token customerDict:customer apiUrl:target completionHandler:nil];
+}
+
+
+- (id)initWithToken:(NSString *)token customerString:(NSString *)customer apiUrl: (NSString *) uriString {
+    return [self initWithToken:token customerDict:@{@"registered":customer} apiUrl:uriString completionHandler:nil];
+}
+
 - (id)initWithToken:(NSString *)token customerString:(NSString *)customer completionHandler:(void (^)(NSURLResponse *response,NSData *data, NSError *connectionError)) completionHandler
 {
 	return [self initWithToken:token customerDict:@{@"registered":customer} apiUrl:target completionHandler:completionHandler];
@@ -29,6 +44,10 @@
 	return [self initWithToken:token customerDict:@{@"registered":customer} apiUrl:uriString completionHandler:completionHandler];
 }
 
+- (id)initWithToken:(NSString *)token customerDict:(NSDictionary *)customer apiUrl: (NSString *) uriString{
+    return [self initWithToken:token customerDict:customer apiUrl:uriString completionHandler:nil];
+}
+
 - (id)initWithToken:(NSString *)token customerDict:(NSDictionary *)customer apiUrl: (NSString *) uriString completionHandler:(void (^)(NSURLResponse *response,NSData *data, NSError *connectionError)) completionHandler
 
 {
@@ -38,7 +57,13 @@
 		self.token = token;
 		self.customer = customer == nil ? @{} : customer;
         self.uriString = uriString;
-        self.handler = completionHandler;
+        self.handler = completionHandler != nil ? completionHandler :
+            ^(NSURLResponse *response, NSData *postData, NSError *error){
+                if (error) {
+                    NSLog(@"7Segments error:%@", error.localizedDescription);
+                }
+                NSLog(@"7Segments response: %@", response);
+            };
 
 	}
 	return self;
@@ -83,16 +108,6 @@
 - (void) identifyCustomerFromDictionary: (NSDictionary*) customer  withProperties: (NSDictionary*) properties {
     self.customer = customer;
     
-    /*NSDictionary* payload;
-
-    payload = @{
-        @"ids": self.customer ,
-        @"company_id":  self.token,
-        @"properties": properties == nil ? @{} : properties
-    };
-    
-    [self post:@"/crm/customers" withJsonPayload:payload];
-     */
     [self updateProperties: properties];
 }
 
